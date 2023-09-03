@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    font-family: Montserrat, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #F7F7FE;
+    min-height: 60vh;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --verylightgrayishblue: hsl(240, 78%, 98%);
+    --lightgrayishblue: hsl(234, 14%, 74%);
+    --grayishblue: hsl(233, 13%, 49%);
+    --darkgrayishblue: hsl(232, 13%, 33%);
+}
+
+.pricing-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top h1 {
+    color: var(--grayishblue);
+    text-align: center;
+
+}
+
+
+
+.flex-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 3em;
+
+    & h5 {
+        color: var(--grayishblue);
+    }
+}
+
+
+
+.toggle {
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%) );
+      width: 60px;
+      height: 34px;
+      position: relative;
+      border-radius: 34px;
+      
+      cursor: pointer;
+      
+}
+
+.toggle:hover {
+    opacity: .6;
+}
+
+.toggle::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 4px;
+    right: 4px;
+    transition: all 0.3s;
+  }
+
+  
+
+  .toggle.on:before {
+    transform: translateX(-26px);
+  }
+
+  .panel1 {
+      background: white;
+      padding: 2em;
+      text-align: center;
+      width: 300px;
+
+  }
+
+  .price1 {
+    padding: .3em 0;
+    font-size: 4em;
+    color: var(--grayishblue);
+
+    & span {
+        font-size: .6em;
+    }
+  }
+
+
+
+
+  .price2 {
+    padding: .3em 0;
+    font-size: 4em;
+      display: none;
+      color: var(--grayishblue);
+      & span {
+        font-size: .6em;
+    }
+  }
+
+.show-yearly .price2 {
+    display:block;
+}
+
+.show-yearly .price1 {
+    display: none;
+}
+
+
+
+
+
+.line {
+    width: 100%;
+    height: 2px;
+    background: var(--verylightgrayishblue);
+    margin: 1em 0;
+}
+
+.btn {
+    width: 100%;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%) );
+    height: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background: white;
+    color:hsl(237, 63%, 64%);
+    border: 1px solid hsl(237, 63%, 64%);
+}
+
+.btn-middle:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.panels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel2 {
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%) );
+    padding: 4em 2em;
+    text-align: center;
+    width: 300px;
+    border-radius: 6px;
+
+}
+
+
+.pro {
+    color: white;
+}
+
+.price-1-middle {
+    color: white;
+}
+
+.price-2-middle {
+    color: white;
+}
+
+.line-middle {
+    background: var(--verylightgrayishblue);
+    height:1px;
+}
+
+.btn-middle {
+    background: white;
+    color: hsl(237, 63%, 64%);
+    font-weight: 700;
+}
+
+.list-item-middle {
+    color: white;
+
+}
+
+.panel3 {
+    background: white;
+    padding: 2em;
+    text-align: center;
+    width: 300px;
+
+}
+
+.panels h5:not(.pro) {
+    color: var(--grayishblue);
+}
+
+.list-item:not(.list-item-middle) {
+    color: var(--grayishblue);
+}
